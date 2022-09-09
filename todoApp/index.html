@@ -21,17 +21,15 @@
   <body>
     <!-- App container -->
     <main class="app mt-4 text-center">
-      <!-- Greeting -->
+      <!-- header -->
       <h1 class="display-4 text-center">
         <i class="fas fa-cake text-primary"></i>ToDo<span class="text-primary"
           >Bakery</span
         >App
       </h1>
-      <!-- End of Greeting -->
 
       <!-- New Todo -->
       <section class="create-todo">
-        <h3>CREATE A TODO</h3>
         <form id="new-todo-form">
           <div class="form-group mt-4">
             <h4>What's on your todo?</h4>
@@ -44,28 +42,27 @@
             />
           </div>
 
-          <h4>Pick a category</h4>
-          <div class="options">
-            <label>
-              <input
-                type="radio"
-                name="category"
-                id="category1"
-                value="business"
-              />
-              <span class="bubble business"></span>
-              <div>Business</div>
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="category"
-                id="category2"
-                value="personal"
-              />
-              <span class="bubble personal"></span>
-              <div>Personal</div>
-            </label>
+          <div class="form-group mt-4">
+            <h4>What's on your todo?</h4>
+            <input
+              classs="form-control"
+              type="text"
+              placeholder="e.g. Vanilla cake for Ms. Green"
+              name="content"
+              id="content"
+            />
+          </div>
+          
+          <div class="form-group mt-4">
+            <h4>What's on your todo?</h4>
+            <input
+              classs="form-control"
+              type="text"
+              placeholder="e.g. Vanilla cake for Ms. Green"
+              name="content"
+              id="content"
+            />
+          </div>
           </div>
 
           <input type="submit" value="Add todo" />
