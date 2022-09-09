@@ -20,26 +20,29 @@
   </head>
   <body>
     <!-- App container -->
-    <main class="app">
+    <main class="app mt-4">
       <!-- Greeting -->
-      <section class="greeting">
-        <h2 class="title">
-          What's up, <input type="text" id="name" placeholder="Name here" />
-        </h2>
-      </section>
+      <h1 class="display-4 text-center">
+        <i class="fas fa-cake text-primary"></i>ToDo<span class="text-primary"
+          >Bakery</span
+        >App
+      </h1>
       <!-- End of Greeting -->
 
       <!-- New Todo -->
       <section class="create-todo">
         <h3>CREATE A TODO</h3>
         <form id="new-todo-form">
-          <h4>What's on your todo?</h4>
-          <input
-            type="text"
-            placeholder="e.g. Get some milk"
-            name="content"
-            id="content"
-          />
+          <div class="form-group mt-4">
+            <h4>What's on your todo?</h4>
+            <input
+              classs="form-control"
+              type="text"
+              placeholder="e.g. Get some milk"
+              name="content"
+              id="content"
+            />
+          </div>
 
           <h4>Pick a category</h4>
           <div class="options">
