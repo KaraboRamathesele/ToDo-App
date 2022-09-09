@@ -21,6 +21,7 @@ window.addEventListener('load', () => {
 			createdAt: new Date().getTime()
 		}
 
+        // Add new to do to the array
 		todos.push(todo);
 
 		localStorage.setItem('todos', JSON.stringify(todos));
@@ -33,6 +34,8 @@ window.addEventListener('load', () => {
 
 	DisplayTodos()
 })
+
+
 
 function DisplayTodos() {
 	const todoList = document.querySelector('#todo-list');
