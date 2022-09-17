@@ -3,7 +3,7 @@ const input = document.querySelector('.input-list');
 const button = document.querySelector('.button-list');
 const list = document.querySelector('.input-group');
 
-button.addEventListener('click', addtodo)
+button.addEventListener('click', addtodo);
 
 function addtodo(event) {
     event.preventDefault();
@@ -18,12 +18,16 @@ function addtodo(event) {
     listDiv.appendChild(addList);
 
     const buttonAdd = document.createElement('button');
-    buttonAdd.innerText = 'Done';
+    buttonAdd.innerText = `
+    <i class= 'fa-solid fa-circle-check success'></i>
+    `;
     buttonAdd.classList.add('add-btn');
     listDiv.appendChild(buttonAdd);
 
     const buttonRemove = document.createElement('button');
-    buttonRemove.innerText = 'remove';
+    buttonRemove.innerText = `
+    <i class= 'fa-solid fa-trash text-danger'></i>
+    `;
     buttonRemove.classList.add('remove-btn');
     listDiv.appendChild(buttonRemove);
 
